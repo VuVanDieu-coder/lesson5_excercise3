@@ -7,14 +7,19 @@
     <title>Kiểm tra số chẵn</title>
 </head>
 <body>
-    
+    <p>Nhập số</p>
+    <input type="number" id="num1">
+    <button type="button" onclick="check()">Kiểm tra</button>
 </body>
 </html>
 <script>
-    num1 = +prompt("Nhập số");
-    result=num1%2==0;
-    if (result) {
-        alert("Đây là số chẵn");
-    }else
-        alert("Đây không phải số chẵn");
+    function check(){
+        let num1 = document.getElementById("num1").value;
+        let result=num1%2==0;
+    
+        if (result) {
+            alert("Đây là số chẵn");
+        }else
+            alert("Đây không phải số chẵn");
+    }
 </script>
